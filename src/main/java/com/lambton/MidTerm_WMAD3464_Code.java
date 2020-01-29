@@ -9,10 +9,11 @@ package com.lambton;
  *
  * @author Pritesh Patel
  */
-public class MidTerm_WMAD3464_Code {
+ class C0778925Main{
 
     public static void main(String[] args) 
     {
+
         System.out.println("\n--- Reverse Words");
         String rev = LambtonStringTools.reverse("Failure will never overtake me if my determination to succeed is strong enough");
         System.out.println("Input  : Failure will never overtake me if my determination to succeed is strong enough");

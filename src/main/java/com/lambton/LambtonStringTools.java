@@ -14,7 +14,12 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {
-
+        int c=1;
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)==" ")
+                c++;
+        }
         return null;
     }
     
@@ -23,6 +28,7 @@ public class LambtonStringTools
     {
 
         return null;
+
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
