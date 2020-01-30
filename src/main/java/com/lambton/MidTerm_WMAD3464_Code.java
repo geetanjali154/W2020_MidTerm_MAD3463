@@ -9,7 +9,7 @@ package com.lambton;
  *
  * @author Pritesh Patel
  */
- class C0778925Main{
+class C0778925Main{
 
     public static void main(String[] args) 
     {
