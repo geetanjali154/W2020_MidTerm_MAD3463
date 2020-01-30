@@ -5,6 +5,8 @@
  */
 package com.lambton;
 
+import com.sun.deploy.security.SelectableSecurityManager;
+
 /**
  *
  * @author Pritesh Patel
@@ -88,13 +90,37 @@ public class LambtonStringTools
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
-    public static String mostFrequent(String s) 
+    public static String mostFrequent(String s)
     {
-        if(s.equals(null)){
-        return null;}
-        
+        if(s.equals(null))
+        {
+        return null;
+        }
+        int c=0;
+        int b=0;
+        String frequent="";
+
+    for(int i=0;i<s.length();i++)
+    {
+        char a=s.charAt(i);
+        for(int j=i+1;j<s.length();j++)
+        {
+            if(a==s.charAt(i)){
+                c++;
+
+            }
+            else{
+                continue;}}
+        if(c>b){
+            frequent="";
+            frequent=frequent+s.charAt(i);}
 
     }
+        return frequent;
+    }
+
+
+
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
     public static int binaryToDecimal(String s) 
