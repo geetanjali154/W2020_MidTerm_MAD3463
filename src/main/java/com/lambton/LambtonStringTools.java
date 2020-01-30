@@ -15,13 +15,34 @@ public class LambtonStringTools
     public static String reverse(String s)
     {
         int c=1;
+        int j=0;
+
         for(int i=0;i<s.length();i++)
         {
-            if(s.charAt(i)==" ")
+            if(s.charAt(i)==' ' )
                 c++;
         }
-        return null;
-    }
+        String s1[]=new String[c];
+        String s2="";
+        for(int i=0;i<s1.length;i++)
+        {
+            s1[i]="";
+            while(j<s.length())
+            {
+                if(s.charAt(j)!=' ')
+                {
+                    s1[i]=s1[i]+s.charAt(j);
+                }
+                else
+                    break;
+            }j++;
+        }
+        for(int i=s1.length;i>=0;i--)
+        {
+            s2=s2+s1[i]+" ";
+        }
+        
+    return s2;}
     
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s) 
